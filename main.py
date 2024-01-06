@@ -4,9 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 
 from handlers import bot_messages, user_commands
-# from callbacks import pagination
 
-# from config_reader import config
 from config import BOT_TOKEN
 
 

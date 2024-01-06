@@ -13,7 +13,7 @@ async def greetings(message: Message):
 
 @router.message()
 async def echo(message: Message, bot: Bot):
-    print( message )
+    # print( message )
     if message.text:
         msg = message.text.lower()
 
@@ -29,6 +29,6 @@ async def echo(message: Message, bot: Bot):
 
     if message.contact:
         chat_id = CHAT_ID_OWNER
-        print(message.contact)
+        # print(message.contact)
         await bot.send_message(chat_id, f"Через бота оставлен контакт: {message.contact.first_name} "
                                         f"{message.contact.last_name}, {message.contact.phone_number}" )
