@@ -11,11 +11,11 @@ main = ReplyKeyboardMarkup(
         ],
         [
             KeyboardButton(text="Программа праздника"),
-            KeyboardButton(text="Отправить контакт", request_contact=True)
+            KeyboardButton(text="Подтвердить своё присутствие", request_contact=True)
         ]
     ],
     resize_keyboard=True,
-    one_time_keyboard=True,
+    one_time_keyboard=False,
     input_field_placeholder="Выберите действие из меню",
     selective=True
 )
